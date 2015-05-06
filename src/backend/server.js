@@ -14,7 +14,6 @@ var Server = function(port) {
 						console.log(err);
 						res.status.internalServerError(err);
 					} else {
-						console.log(rows);
 						res.collection(rows).send();
 					}
 				});
